@@ -90,12 +90,25 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="崔氏小农">
-<meta property="og:url" content="http://cuipeng.github.io/index.html">
+<meta name="description" content="简介　　本文翻译并注释A Practical Introduction to Deep Learning with Caffe and Python，通过深度学习算法（CNN），建立一个猫狗图像分类器。数据集来自Kaggle. 机器学习 Vs 深度学习机器学习:训练阶段　　特征提取：使用已有知识来提取机器学习算法使用的特征,比如 HoG、SIFT。　　模型训练：我们使用一个由图像和标签的数据集去训">
+<meta property="og:type" content="article">
+<meta property="og:title" content="深度学习（CatVsDog）">
+<meta property="og:url" content="http://cuipeng.github.io/2017/05/16/深度学习（CatVsDog）/index.html">
 <meta property="og:site_name" content="崔氏小农">
+<meta property="og:description" content="简介　　本文翻译并注释A Practical Introduction to Deep Learning with Caffe and Python，通过深度学习算法（CNN），建立一个猫狗图像分类器。数据集来自Kaggle. 机器学习 Vs 深度学习机器学习:训练阶段　　特征提取：使用已有知识来提取机器学习算法使用的特征,比如 HoG、SIFT。　　模型训练：我们使用一个由图像和标签的数据集去训">
+<meta property="og:image" content="http://cuipeng.github.io/img/machine-learning-training-prediction-2.png">
+<meta property="og:image" content="http://cuipeng.github.io/img/traditional-ml-deep-learning-2.png">
+<meta property="og:image" content="http://cuipeng.github.io/img/neurons.png">
+<meta property="og:image" content="http://cuipeng.github.io/img/feedforward-nn.png">
+<meta property="og:image" content="http://cuipeng.github.io/img/activation.png">
+<meta property="og:image" content="http://cuipeng.github.io/img/lenet.png">
+<meta property="og:image" content="http://cuipeng.github.io/img/max-pooling.png">
+<meta property="og:image" content="http://cuipeng.github.io/img/cnn-architecture.png">
+<meta property="og:updated_time" content="2017-05-17T08:44:14.364Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="崔氏小农">
+<meta name="twitter:title" content="深度学习（CatVsDog）">
+<meta name="twitter:description" content="简介　　本文翻译并注释A Practical Introduction to Deep Learning with Caffe and Python，通过深度学习算法（CNN），建立一个猫狗图像分类器。数据集来自Kaggle. 机器学习 Vs 深度学习机器学习:训练阶段　　特征提取：使用已有知识来提取机器学习算法使用的特征,比如 HoG、SIFT。　　模型训练：我们使用一个由图像和标签的数据集去训">
+<meta name="twitter:image" content="http://cuipeng.github.io/img/machine-learning-training-prediction-2.png">
 
 
 
@@ -123,13 +136,13 @@
 
 
 
-  <link rel="canonical" href="http://cuipeng.github.io/"/>
+  <link rel="canonical" href="http://cuipeng.github.io/2017/05/16/深度学习（CatVsDog）/"/>
 
 
 
 
 
-  <title>崔氏小农</title>
+  <title>深度学习（CatVsDog） | 崔氏小农</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -155,9 +168,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -260,9 +271,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -288,9 +299,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/05/16/深度学习（CatVsDog）/" itemprop="url">深度学习（CatVsDog）</a></h1>
+          <h1 class="post-title" itemprop="name headline">深度学习（CatVsDog）</h1>
         
 
         <div class="post-meta">
@@ -337,9 +346,7 @@
       
 
       
-        
-          
-            <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>　　本文翻译并注释<a href="http://adilmoujahid.com/posts/2016/06/introduction-deep-learning-python-caffe/" target="_blank" rel="external">A Practical Introduction to Deep Learning with Caffe and Python</a>，通过深度学习算法（CNN），建立一个猫狗图像分类器。数据集来自Kaggle.</p>
+        <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>　　本文翻译并注释<a href="http://adilmoujahid.com/posts/2016/06/introduction-deep-learning-python-caffe/" target="_blank" rel="external">A Practical Introduction to Deep Learning with Caffe and Python</a>，通过深度学习算法（CNN），建立一个猫狗图像分类器。数据集来自Kaggle.</p>
 <h1 id="机器学习-Vs-深度学习"><a href="#机器学习-Vs-深度学习" class="headerlink" title="机器学习 Vs 深度学习"></a>机器学习 Vs 深度学习</h1><h2 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习:"></a>机器学习:</h2><h3 id="训练阶段"><a href="#训练阶段" class="headerlink" title="训练阶段"></a>训练阶段</h3><p>　　特征提取：使用已有知识来提取机器学习算法使用的特征,比如 HoG、SIFT。<br>　　模型训练：我们使用一个由图像和标签的数据集去训练机器学习。</p>
 <h3 id="预测阶段"><a href="#预测阶段" class="headerlink" title="预测阶段"></a>预测阶段</h3><p>　　使用同样的特征提取方法处理新的图像，我们将提取出来的特征交给机器学习算法来预测标签。<br>　　<img src="/img/machine-learning-training-prediction-2.png" alt=""></p>
 <h2 id="深度学习"><a href="#深度学习" class="headerlink" title="深度学习:"></a>深度学习:</h2><p>　　传统的机器学习和深度学习的主要区别是在特征工程。传统的机器学习算法中，我们需要手动的提取特征。相反，在深度学习算法特征工程是有算法自动完成。特征工程是麻烦、耗时，并且需要专业知识。相比于传统的机器学习巨量的特征工程，深度学习只需要很少甚至不需要特征工程，但是能做到更高的准确率。深度学习是一种端到端（End to End）的算法。<br>　　<img src="/img/traditional-ml-deep-learning-2.png" alt="">
@@ -355,20 +362,27 @@
 <h4 id="池化层"><a href="#池化层" class="headerlink" title="池化层"></a>池化层</h4><p>  　　池化层的目标是逐步减小卷积结果的空间大小，并减少网络的参数和计算量，同时能起到一定的抑制过拟合的效果。采用最多的方法是最大值池化，如下图：<br>  　　<img src="/img/max-pooling.png" alt=""></p>
 <h4 id="卷积神经网络架构"><a href="#卷积神经网络架构" class="headerlink" title="卷积神经网络架构"></a>卷积神经网络架构</h4><p>  　　常见的CNNs如下图：<br>      <img src="/img/cnn-architecture.png" alt=""><br>      CNNs由输入层开始，接着是一系列的卷积层和池化层，最后是全连接层。卷积层常常接着ReLU激励函数。卷积层、池化层、激励层的作用是具有学习能力的特征提取器，而全连接层的作用是像机器学习的分类器作用。<br>      另外，只有卷积层和全连接层有权重，并且这些权重是在训练阶段学习到的。</p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
@@ -376,133 +390,38 @@
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://cuipeng.github.io/2017/05/15/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Cui Peng">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="崔氏小农">
-    </span>
-
-    
-      <header class="post-header">
-
         
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/05/15/hello-world/" itemprop="url">Hello World</a></h1>
-        
+      
 
-        <div class="post-meta">
-          <span class="post-time">
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-15T17:28:25+08:00">
-                2017-05-15
-              </time>
+              <a href="/2017/05/15/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>欢迎来到我的GitHub，这种方式很美妙。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -510,6 +429,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -529,8 +452,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -574,6 +506,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#机器学习-Vs-深度学习"><span class="nav-number">2.</span> <span class="nav-text">机器学习 Vs 深度学习</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#机器学习"><span class="nav-number">2.1.</span> <span class="nav-text">机器学习:</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#训练阶段"><span class="nav-number">2.1.1.</span> <span class="nav-text">训练阶段</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#预测阶段"><span class="nav-number">2.1.2.</span> <span class="nav-text">预测阶段</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#深度学习"><span class="nav-number">2.2.</span> <span class="nav-text">深度学习:</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#深度学习速成"><span class="nav-number">3.</span> <span class="nav-text">深度学习速成</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#人工神经网络"><span class="nav-number">3.1.</span> <span class="nav-text">人工神经网络</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#人工神经网络-Vs-生物神经网络"><span class="nav-number">3.1.1.</span> <span class="nav-text">人工神经网络 Vs 生物神经网络</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#前馈神经网络"><span class="nav-number">3.1.2.</span> <span class="nav-text">前馈神经网络</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#激励函数"><span class="nav-number">3.1.3.</span> <span class="nav-text">激励函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#训练人工神经网络"><span class="nav-number">3.1.4.</span> <span class="nav-text">训练人工神经网络</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#卷积神经网络"><span class="nav-number">3.1.5.</span> <span class="nav-text">卷积神经网络</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#卷积层"><span class="nav-number">3.1.5.1.</span> <span class="nav-text">卷积层</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#池化层"><span class="nav-number">3.1.5.2.</span> <span class="nav-text">池化层</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#卷积神经网络架构"><span class="nav-number">3.1.5.3.</span> <span class="nav-text">卷积神经网络架构</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -687,6 +635,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
 
   
 
